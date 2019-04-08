@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.app {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  margin: 0 auto;
+}
+
+.add {
+  width: 100%;
+  display: flex;
+  border-bottom: solid black 1px;
+}
+
+.add input {
+  background-color: transparent;
+  border: 0;
+  font-size: 4rem;
+  flex-grow: 1;
+}
+
+.add input[type=button] {
+  width: 5rem;
+  height: 5rem;
+  flex-grow: 0;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.app ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.app li {
+  cursor: pointer;
+}
+
+.app li[data-finished=true] {
+  text-decoration: line-through;
+  color: gray;
+}
