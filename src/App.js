@@ -4,7 +4,11 @@ import React, { useState } from 'react';
 import LC from  'leancloud-storage';
 import AppStyles from './App.module.css';
 
-LC.init('B09iIN0UKf2qQIjqKz5WiRnv-gzGzoHsz', 'Xes23aMR9VUqzpmEvch8YV4A');
+LC.init({
+  appId: 'B09iIN0UKf2qQIjqKz5WiRnv-gzGzoHsz',
+  appKey: 'Xes23aMR9VUqzpmEvch8YV4A',
+  serverURL: 'https://ozewwcws.lc-cn-n1-shared.com'
+       });
 
 function saveTodo(content) {
   const Todo = LC.Object.extend('Todo');
