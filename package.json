@@ -24,6 +24,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "npm-check-updates": "^10.2.5"
+    "npm-check-updates": "^18.0.1"
   }
 }
